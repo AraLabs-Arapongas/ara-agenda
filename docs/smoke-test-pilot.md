@@ -456,8 +456,8 @@ Marca e aparência (`/admin/dashboard/marca`):
 **Pré-condição:** usuário com `user_profiles.role='PLATFORM_ADMIN'` (ex: `thiago@aralabs.com.br`). Em prod precisa do subdomínio `admin` configurado no DNS+Vercel; em dev usar `http://admin.lvh.me:3008/`.
 
 - [ ] Acessar `http://admin.lvh.me:3008/login` → form "AraLabs Admin" carrega.
-- [ ] Inserir email institucional → "Enviar link mágico" → mensagem "Enviamos link...".
-- [ ] Abrir email, clicar link → cair em `/dashboard` autenticado (sidebar visível).
+- [ ] Inserir email institucional → "Receber código por email" → mensagem "Enviamos um código de 6 dígitos...".
+- [ ] Abrir email, copiar o código de 6 dígitos → colar no input → "Entrar" → cair em `/dashboard` autenticado (sidebar visível).
 - [ ] Cards do dashboard (Tenants, MRR, Em trial, Trials vencendo 7d) com números coerentes.
 - [ ] Sidebar "Tenants" → tabela carrega, busca por slug funciona, filtros status/billing funcionam.
 - [ ] "+ Novo tenant" → preencher form com slug único → submit → redirect pra detalhe.
